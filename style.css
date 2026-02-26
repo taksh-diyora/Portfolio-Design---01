@@ -1,0 +1,355 @@
+@font-face{
+    font-family: 'Osake';
+    src: url(./Font/OTF/Osake.otf), url(./Font/TTF/Osake.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Sukajan';
+    src: url(./Font/Sukajan/Sukajan.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.portfolio{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-nav{
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: white;
+}
+
+.left-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 7%;
+    padding-left: 3.5%;
+    align-items: center;
+}
+
+.nav-buttons{
+    font-family: 'Osake';
+}
+
+.right-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+    gap: 1%;
+}
+
+.right-nav i{
+    font-size: 10px;    
+}
+
+.right-nav h3{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.portfolio-body{
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    height: 100vh;
+    position: absolute;
+}
+
+.page{
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background-image-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.background-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.background-top-image-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.background-top-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headline-portfolio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+    z-index: 5;
+}
+
+.headline-portfolio h1{
+    font-family: 'Osake', sans-serif;
+    z-index: 0;
+    font-size: 300px;
+}
+
+.ore-wa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 20%;
+    top: 18%;
+}
+
+.ore-wa h1{
+    font-size: 50px;
+    font-family: 'Sukajan';
+    color: white;
+}
+
+.creative-portfolio-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 64%;
+    top: 14%;
+    z-index: 1;
+}
+
+.creative-portfolio-text h1{
+    font-size: 100px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+
+.creative-developer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    padding-left: 50px;
+    left: 2%;
+}
+
+.creative-developer h1{
+    font-size: 60px;
+    letter-spacing: 20px;
+    color: rgba(51, 47, 47, 0.611);
+}
+
+.top-page-buttons{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 20%;
+    padding-left: 50px;
+    top: 73%;
+    z-index: 9;
+}
+
+.top-page-buttons h1{
+    border: 2px solid rgba(255, 255, 255, 0.544);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.strawhat-image-container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    width: 100%;
+    height: 70%;
+}
+
+.strawhat-image-container img{
+    position: sticky;
+    top: 50%;
+    width: 300px;
+    height: fit-content;
+}
+
+.luffy-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    top: 39%;
+}
+
+.luffy-image img{
+    width: 350px;
+    height: 350px;
+}
+
+.about-page-content{
+    padding-top: 2%;
+    padding-left: 50px;
+    padding-top: 5%;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px;
+    color: white;
+}
+
+.about-text-email h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Sukajan';
+}
+
+.about-text-email h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-description p{
+    font-size: 20px;
+    font-family: 'Sukajan';
+}
+
+.address-information{
+    color: white;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-information h1{
+    font-family: 'Sukajan';
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.address-information h2{
+    font-family: 'Sukajan';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer{
+    color: white;
+    background-color: #222222;
+    width: 100%;
+    height: 40vh;
+}
+
+.upper-footer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+}
+
+.lower-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.lower-footer h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-icons{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.social-media-icons i{
+    font-size: 25px;
+    color: black;
+}
+
+.page-locations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.page-locations h1{
+    font-size: 20px;
+    font-weight: 300;
+}
